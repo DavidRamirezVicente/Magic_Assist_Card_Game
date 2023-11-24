@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+
+    <ImageButton
+        android:id="@+id/lifetwotooone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:src="@drawable/baseline_arrow_downward_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <ImageButton
+        android:id="@+id/lifeonetootwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:src="@drawable/baseline_arrow_upward_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <Button
+        android:id="@+id/p2poisonmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/p"
+        android:textColor="@color/green"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/p2poisonless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/p_"
+        android:textColor="@color/green"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/p1poisonmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/p"
+        android:textColor="@color/green"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1poisonless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/p_"
+        android:textColor="@color/green"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/p1lifemore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/grey"
+        android:src="@drawable/heart_fill_svgrepo_com"
+        app:layout_constraintBottom_toTopOf="@+id/lifetwotooone"
+        app:layout_constraintEnd_toEndOf="@+id/p1poisonmore"
+        app:layout_constraintStart_toStartOf="@+id/p1poisonmore"
+        app:layout_constraintTop_toBottomOf="@+id/p1poisonmore" />
+
+    <ImageButton
+        android:id="@+id/p1lifeless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/grey"
+        android:src="@drawable/iconmonstr_heart_thin"
+        app:layout_constraintBottom_toTopOf="@+id/lifetwotooone"
+        app:layout_constraintEnd_toEndOf="@+id/p1poisonless"
+        app:layout_constraintStart_toStartOf="@+id/p1poisonless"
+        app:layout_constraintTop_toBottomOf="@+id/p1poisonless" />
+
+    <ImageButton
+        android:id="@+id/p2lifemore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/grey"
+        android:src="@drawable/heart_fill_svgrepo_com"
+        app:layout_constraintBottom_toTopOf="@+id/p2poisonmore"
+        app:layout_constraintEnd_toEndOf="@+id/p2poisonmore"
+        app:layout_constraintStart_toStartOf="@+id/p2poisonmore"
+        app:layout_constraintTop_toBottomOf="@+id/lifeonetootwo" />
+
+    <ImageButton
+        android:id="@+id/p2lifeless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/grey"
+        android:src="@drawable/iconmonstr_heart_thin"
+        app:layout_constraintBottom_toTopOf="@+id/p2poisonless"
+        app:layout_constraintEnd_toEndOf="@+id/p2poisonless"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/p2poisonless"
+        app:layout_constraintTop_toBottomOf="@+id/lifeonetootwo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/counterp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/life_count"
+        android:textColor="@color/dark_grey"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/p1lifeless"
+        app:layout_constraintStart_toEndOf="@+id/p1lifemore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/counterp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/life_count"
+        android:textColor="@color/dark_grey"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/p2lifeless"
+        app:layout_constraintStart_toEndOf="@+id/p2lifemore"
+        app:layout_constraintTop_toBottomOf="@+id/lifeonetootwo"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="383dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
